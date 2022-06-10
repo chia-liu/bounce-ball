@@ -1,0 +1,44 @@
+*
+  font-family: 'Secular One', Helvetica, sans-serif
+
+// global settings
+@mixin size($w,$h:$w)
+  width: $w
+  height: $h
+  
+html,body
+  margin: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+  height: 100%
+  background-color: #101119
+.game
+  +size(500px)
+  position: relative
+  border: 5px solid #202232
+  background-color: #2B2D42
+  color: #fff
+  .board
+    background-color: #fff
+  .ball
+    background-color: #EF233C
+    border-radius: 50%
+  .info
+    +size(100%)
+    position: absolute
+    left: 0
+    top: 0
+    background-color: #404363
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    .start
+      font-size: 1rem
+      border-radius: 5px
+      cursor: pointer
+      padding: 5px 15px
+    .grade
+      font-family: 'Alfa Slab One', cursive
