@@ -11,6 +11,72 @@
     justify-content: center;
     align-items: center;
   }
+
+  /* $header */
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .header{
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    z-index: 99;
+  }
+  @media only screen and (min-width: 601px){
+    .header{
+      width: 85%;
+    }
+  }
+  @media only screen and (min-width: 993px){
+    .header{
+      width: 70%;
+    }
+  }
+  .navbar{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+  .logo{
+    flex: 1;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  .menu{
+    flex: 1;
+    width: 100%;
+    text-align: right;
+    display: flex;
+  }
+/* --$hamber toggle */
+  .menuToggle{
+    padding: 1.5rem;
+    display: block;
+    margin-left: auto;
+  }
+  .menuToggle span{
+    width: 30px;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    margin-bottom: 0.5rem;
+    transition: all .3s;
+  }
+  .menuToggle:hover span:nth-child(1){
+    opacity: 0;
+  }
+  .menuToggle:hover span:nth-child(2){
+    transform: rotate(-45deg);
+  }
+  .menuToggle:hover span:nth-child(3){
+    opacity: 0;
+  }
+  /* $Game  */
   .game {
     width: 500px;
     height: 500px;
