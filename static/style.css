@@ -116,3 +116,12 @@
   .game .info .grade {
     font-family: "Alfa Slab One", cursive;
   }
+/* Footer */
+.footer{
+    width:100%;
+    padding: 5px auto;
+}
+.footer a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+}
