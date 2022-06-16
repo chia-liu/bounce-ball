@@ -117,11 +117,13 @@
     font-family: "Alfa Slab One", cursive;
   }
 /* Footer */
-.footer{
+footer{
     width:100%;
     padding: 5px auto;
+    position: absolute;
+    bottom: 0;
 }
-.footer a{
+.footer{
     text-decoration: none;
     color: rgba(255,255,255,0.5);
 }
